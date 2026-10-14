@@ -1,4 +1,5 @@
 Solar Power Generation Forecasting Using Machine Learning
+
 A KDD-based predictive analytics project that explores solar power generation data and compares regression models for estimating plant-level AC power output.
 
 Project Overview
