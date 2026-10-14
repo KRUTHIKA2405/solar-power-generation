@@ -20,16 +20,12 @@ Important: Although the project uses the term forecasting, the notebook predicts
 
 Dataset
 Source: Solar Power Generation Data — Kaggle
-
-The notebook requires these four CSV files:
-
+The notebook consists these four CSV files:
 Plant_1_Generation_Data.csv
 Plant_1_Weather_Sensor_Data.csv
 Plant_2_Generation_Data.csv
 Plant_2_Weather_Sensor_Data.csv
-Generation data is recorded at inverter level, while weather data contains plant-level sensor readings. The notebook aggregates inverter outputs by plant and timestamp, aggregates duplicate sensor readings where needed, and joins the data using plant and timestamp.
-
-Dataset redistribution: The CSV files are not included in this repository. Download them from the original Kaggle source and review the dataset page's licence/terms before redistributing the data.
+Generation data is recorded at the inverter level, while weather data contains plant-level sensor readings. The notebook aggregates inverter outputs by plant and timestamp, aggregates duplicate sensor readings where needed, and joins the data using plant and timestamp.
 
 Models and Evaluation
 The notebook compares:
@@ -54,15 +50,6 @@ Plant ID
 Time-derived features
 Direct generation-related variables such as DC_POWER, DAILY_YIELD, and TOTAL_YIELD are excluded from the primary feature set to reduce target leakage.
 
-Run in Google Colab
-Download or clone this repository, or download the notebook file.
-Open Google Colab.
-Select File → Upload notebook and upload Solar_Power_Generation_Forecasting_KDD.ipynb.
-Download the four CSV files from the Kaggle dataset page.
-Run the notebook cells from top to bottom. When the data-upload cell appears, select all four CSV files together. Do not upload only the ZIP file unless you first extract it and select the CSV files.
-Inspect the generated plots and metrics, then complete the results/discussion section using your actual outputs.
-Save or download the executed notebook if you want to preserve outputs in your copy.
-If a file-not-found error appears, check that the uploaded filenames include the plant number and data type, such as Plant_1_Generation_Data.csv.
 
 Run Locally
 Requirements: Python 3.10 or later is recommended.
